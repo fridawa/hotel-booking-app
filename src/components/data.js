@@ -31,4 +31,20 @@ export default [
     image:
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
   },
+  {
+    id: 5,
+    name: "Hotel five",
+    description:
+      "A flat-screen cable TV with pay-per-view channels is provided in each guest room at Loews Hollywood Hotel. All of the stylish rooms include a work desk, a minibar and a coffee maker supplied with gourmet coffee and tea. Select rooms offer views of the Hollywood Hills.",
+    image:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
+  },
+  {
+    id: 6,
+    name: "Hotel six",
+    description:
+      "A flat-screen cable TV with pay-per-view channels is provided in each guest room at Loews Hollywood Hotel. All of the stylish rooms include a work desk, a minibar and a coffee maker supplied with gourmet coffee and tea. Select rooms offer views of the Hollywood Hills.",
+    image:
+      "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg",
+  },
 ];

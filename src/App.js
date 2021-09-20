@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import data from "./components/data";
 import List from "./components/List";
+import Search from "./Search";
 
 function App() {
   //importerar datan från data
@@ -9,6 +10,7 @@ function App() {
     <main>
       <section className="container">
         <h3>{hotels.length} hotels</h3>
+        <Search />
         <div className="row">
           <List hotels={hotels} />
         </div>
