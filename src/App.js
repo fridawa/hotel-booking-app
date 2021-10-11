@@ -6,6 +6,7 @@ import Search from "./Search";
 function App() {
   //importerar datan från data
   const [hotels, setHotels] = useState(data);
+  console.log(hotels);
   return (
     <main>
       <section className="container">
