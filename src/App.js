@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import data from "./components/data";
 import List from "./components/List";
-import Search from "./Search";
-
+import Search from "./components/Search";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 function App() {
   //importerar datan från data
   const [hotels, setHotels] = useState(data);
@@ -10,11 +14,12 @@ function App() {
   return (
     <main>
       <section className="container">
-        <h3>{hotels.length} hotels</h3>
+        <Header />
         <Search />
         <div className="row">
           <List hotels={hotels} />
         </div>
+        <Footer />
       </section>
     </main>
   );
