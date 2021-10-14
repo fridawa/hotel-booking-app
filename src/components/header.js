@@ -4,13 +4,13 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              Navbar
+        <nav className="navbar navbar-expand-md ">
+          <div className="container-fluid">
+            <a className="navbar-brand text-light ps-4" href="#">
+              destination.com
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -18,26 +18,22 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav ">
+                <a
+                  className="nav-link text-light active "
+                  aria-current="page"
+                  href="#"
+                >
                   Home
                 </a>
-                <a class="nav-link" href="#">
-                  Features
+                <a className="nav-link text-light" href="#">
+                  Hotels
                 </a>
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                >
-                  Disabled
+                <a className="nav-link text-light" href="#">
+                  Flights
                 </a>
               </div>
             </div>

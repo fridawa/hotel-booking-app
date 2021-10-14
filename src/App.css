@@ -17,13 +17,77 @@ img that aren't squares. */
   height: 100%;
   object-fit: cover;
 }
+
+/* Fonten på allt */
 * {
-  overflow: auto;
+  font-family: "sofia-pro-soft";
 }
 
-.hotel-img-div {
-  max-width: 200px;
+/* Bakgrund */
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/40/empire-state-building-1081929_1280.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-.hotel-img {
-  max-width: 100%;
+
+/* Forces 0 padding on container */
+.container-fluid {
+  padding: 0px !important;
+}
+/* Navbar */
+.navbar,
+.footer-copy {
+  background-color: rgb(20, 20, 20);
+}
+.navbar-toggler {
+  color: blanchedalmond;
+}
+
+/* Searchbar */
+.hotel-search-container {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.searchbar {
+  background-color: #ffffff;
+  border-radius: 3rem;
+}
+.searchbar-row {
+  padding: 1rem 1.5rem;
+}
+.my-btn {
+  background-color: rgb(20, 20, 20);
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.location-search {
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+.date-search {
+  border-top: 1px solid #212529;
+  border-bottom: 1px solid #212529;
+  z-index: 1;
+}
+.gueast-search {
+  /* So it doesnt hide the guest-input-field */
+  z-index: 2;
+}
+
+/* Filter List */
+.filterlist-container {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Rounded border */
+hr.fridas-border {
+  border-top: 1px solid rgb(119, 119, 119);
+  border-radius: 5px;
+  max-width: 85%;
+  margin: auto;
+}
+hr {
+  border: 0;
 }

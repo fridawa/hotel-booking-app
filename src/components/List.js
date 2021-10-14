@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const List = ({ hotels }) => {
   return (
@@ -14,7 +15,6 @@ const List = ({ hotels }) => {
           location,
           price,
           faclitiesShort,
-          mainImg,
           roomImg,
         } = hotel;
 
@@ -23,39 +23,43 @@ const List = ({ hotels }) => {
         // ) : (
         //   <div></div>
         // );
-
         return (
-          <article className="container" key={id}>
-            <div className="d-flex md-justify-content-between">
-              <div className="image col-sm-3">
-                <img className="img" src={roomImg} />
-                <img className="img" src={roomImg} />
-              </div>
-              <div className="col-sm-3">
-                <h4>{name}</h4>
-                <h5>{adress}</h5>
-                <h5>{location}</h5>
-                <p>{locationFacts.join(" ")} </p>
-              </div>
-              <div className="col-sm-3">
-                {rooms.map((room) => {
-                  console.log(room);
-                  return (
-                    <>
-                      <p>{room.roomType}</p>
-                    </>
-                  );
-                })}
-                <p>{faclitiesShort}</p>
-              </div>
-              <div className="col-sm-3">
-                <p>{rating}</p>
-                <p>Number of reviews</p>
-                <p>{price}</p>
-                <button>Book Now</button>
-              </div>
-            </div>
-          </article>
+          <Container className="p-0 m-0">
+            <article className=" hotel-search-container mb-3 " key={id}>
+              <Row>
+                <Col sm={3}>
+                  <div className="image">
+                    <img className="img p-2" src={roomImg} />
+                  </div>
+                </Col>
+                <Col sm={3}>
+                  <p className="m-0">{name}</p>
+                  <p className="m-0">{adress}</p>
+                  <p className="m-0">{location}</p>
+                  <p className="m-0">{locationFacts.join(" ")} </p>
+                </Col>
+                <Col sm={3}>
+                  {rooms.map((room) => {
+                    console.log(room);
+                    return (
+                      <>
+                        <p className="m-0">{room.roomType}</p>
+                      </>
+                    );
+                  })}
+                  <p className="m-0">{faclitiesShort}</p>
+                </Col>
+                <Col sm={3}>
+                  <p className="m-0">{rating}</p>
+                  <p className="m-0">Number of reviews</p>
+                  <p className="m-0">{price}</p>
+                  <button type="button" className="btn-book btn btn-dark">
+                    Book Now
+                  </button>
+                </Col>
+              </Row>
+            </article>
+          </Container>
         );
       })}
     </>

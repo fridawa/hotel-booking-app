@@ -1,37 +1,50 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <>
-      <footer className="container">
-        <h1 className="d-flex justify-content-center">Footer</h1>
-        <nav className="row navbar ">
-          <ul className="col-sm-4 text-center list-unstyled">
-            <li>
-              <a className="nav-link ">Link1</a>
-            </li>
-            <li>
-              <a className="nav-link">Link2</a>
-            </li>
-          </ul>
-          <ul className="col-sm-4 text-center list-unstyled">
-            <li>
-              <a className="nav-link ">Link1</a>
-            </li>
-            <li>
-              <a className="nav-link">Link2</a>
-            </li>
-          </ul>
-          <ul className="col-sm-4 text-center list-unstyled">
-            <li>
-              <a className="nav-link ">Link1</a>
-            </li>
-            <li>
-              <a className="nav-link">Link2</a>
-            </li>
-          </ul>
-        </nav>
-      </footer>
+      <Container>
+        <footer>
+          <Row>
+            <nav className="navbar">
+              <Col sm={4}>
+                <ul className="text-center list-unstyled">
+                  <li>
+                    <a className="nav-link text-light">Link1</a>
+                  </li>
+                  <li>
+                    <a className="nav-link text-light">Link2</a>
+                  </li>
+                </ul>
+              </Col>
+              <Col sm={4}>
+                <ul className="text-center list-unstyled">
+                  <li>
+                    <a className="nav-link text-light">Link1</a>
+                  </li>
+                  <li>
+                    <a className="nav-link text-light">Link2</a>
+                  </li>
+                </ul>
+              </Col>
+              <Col sm={4}>
+                <ul className="text-center list-unstyled">
+                  <li>
+                    <a className="nav-link text-light">Link1</a>
+                  </li>
+                  <li>
+                    <a className="nav-link text-light">Link2</a>
+                  </li>
+                </ul>
+              </Col>
+            </nav>
+          </Row>
+          <Row>
+            <p className="text-center text-light footer-copy">Copyright 2022</p>
+          </Row>
+        </footer>
+      </Container>
     </>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Hotel = ({ hotels }) => {
   return (
@@ -7,18 +8,20 @@ const Hotel = ({ hotels }) => {
         const { id, roomImg } = hotel;
 
         return (
-          <article className="container" key={id}>
-            <div className="row">
-              <div className="hotel-img-div d-flex justify-content-start col-12">
-                <div>
-                  <img className="hotel-img col-12" src={roomImg} />
+          <Container>
+            <article key={id}>
+              <Row>
+                <div className="hotel-img-div d-flex justify-content-start col-12">
+                  <div>
+                    <img className="hotel-img col-12" src={roomImg} />
+                  </div>
+                  <div>
+                    <img className="hotel-img col-12" src={roomImg} />
+                  </div>
                 </div>
-                <div>
-                  <img className="hotel-img col-12" src={roomImg} />
-                </div>
-              </div>
-            </div>
-          </article>
+              </Row>
+            </article>
+          </Container>
         );
       })}
     </>
