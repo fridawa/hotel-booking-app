@@ -14,6 +14,17 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 import { Container, Row, Col } from "react-bootstrap";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faStar,
+  faStarHalfAlt,
+  faMapMarkerAlt,
+  faCalendar,
+  faUserFriends,
+} from "@fortawesome/free-solid-svg-icons";
+
+library.add(faStar, faStarHalfAlt, faMapMarkerAlt, faCalendar, faUserFriends);
+
 function App() {
   //importerar datan från data
   const [hotels, setHotels] = useState(data);

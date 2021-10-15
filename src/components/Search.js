@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -9,6 +10,8 @@ import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 
 import { Collapse, Button } from "react-bootstrap";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Search = () => {
   //om jag ska göra en riktig sökfunktion
@@ -34,78 +37,81 @@ const Search = () => {
 
   return (
     <div>
-      {/* <Button
-        onClick={() => setOpen(!open)}
-        aria-controls="example-collapse-text"
-        aria-expanded={open}
-      >
-        click
-      </Button> */}
-      {/* <Collapse in={open}>
-        <div id="example-collapse-text">
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-      </Collapse> */}
-
-      <div className="searchbar container mt-3">
-        <div className="row searchbar-row">
-          <input
-            className="col-md-3 border border-dark location-search text-center"
-            type="search"
-            placeholder="Search for location"
-            onChange={(event) => {
-              setSearchTerm(event.target.value);
-            }}
-            // onKeyUp={searchFunction}
-          ></input>
-          <div className="d-flex col-md-2 text-lg-center text-sm-left date-search">
-            <DatePicker
-              className="border-0 text-lg-center text-sm-left"
-              selected={checkInDate}
-              onChange={(date) => setCheckInDate(date)}
-              minDate={new Date()}
-              showPreview={true}
-            />
-          </div>
-          <div className="d-flex col-md-2 text-lg-center text-sm-left date-search">
-            <DatePicker
-              className="border-0 text-lg-center text-sm-left"
-              selected={checkOutDate}
-              onChange={(date) => setCheckOutDate(date)}
-              minDate={checkInDate}
-            />
-          </div>
-          <input
-            className="col-md-3 border border-dark gueast-search text-center"
-            type="search"
-            placeholder="Number of guests"
-            onChange={(event) => {
-              setSearchTerm(event.target.value);
-            }}
-            // onKeyUp={searchFunction}
-          ></input>
-
-          <button type="button" className="my-btn col-md-2">
-            Search
-          </button>
-        </div>
-      </div>
-      {/* DateRange togglar inte tillbaka kalendern */}
-      {/* <Collapse in={open}>
-        <div id="example-collapse-text">
-          <DateRange
-            editableDateInputs={true}
-            onChange={(item) => setState([item.selection])}
-            moveRangeOnFirstSelection={false}
-            ranges={state}
-            months={2}
-            direction="horizontal"
-            showSelectionPreview={true}
-          />
-        </div>
-      </Collapse> */}
+      <Container fluid className="searchbar m-0 p-0">
+        <Row className="p-2">
+          <Col md={3} className=" border">
+            <Row>
+              <Col md={2}>
+                <p>
+                  <FontAwesomeIcon icon="map-marker-alt" />
+                </p>
+              </Col>
+              <Col md={10}>
+                <input
+                  className=" border-0 text-center pt-2 pb-2 ps-3"
+                  type="search"
+                  placeholder="Search for location"
+                  // onChange={(event) => {
+                  //   setSearchTerm(event.target.value);
+                  // }}
+                  // onKeyUp={searchFunction}
+                ></input>
+              </Col>
+            </Row>
+          </Col>
+          <Col md={4}>
+            <Row>
+              <Col md={2}>
+                <p className="">
+                  <FontAwesomeIcon icon="calendar" />
+                </p>
+              </Col>
+              <Col md={5}>
+                <DatePicker
+                  className="border-0 text-lg-center text-sm-left pt-2 pb-2"
+                  selected={checkInDate}
+                  onChange={(date) => setCheckInDate(date)}
+                  minDate={new Date()}
+                  showPreview={true}
+                />
+              </Col>
+              <Col md={5}>
+                <DatePicker
+                  className="border-0 text-lg-center text-sm-left pt-2 pb-2 "
+                  selected={checkOutDate}
+                  onChange={(date) => setCheckOutDate(date)}
+                  minDate={checkInDate}
+                />
+              </Col>
+            </Row>
+          </Col>
+          <Col md={3}>
+            <Row>
+              <Col md={2}>
+                <p>
+                  <FontAwesomeIcon icon="user-friends" />
+                </p>
+              </Col>
+              <Col md={10}>
+                <input
+                  className=" border-0 text-center pt-2 pb-2"
+                  type="search"
+                  placeholder="Number of guests"
+                  // onChange={(event) => {
+                  //   setSearchTerm(event.target.value);
+                  // }}
+                  // onKeyUp={searchFunction}
+                ></input>
+              </Col>
+            </Row>
+          </Col>
+          <Col md={2}>
+            <button type="button" className="my-btn">
+              Search
+            </button>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
