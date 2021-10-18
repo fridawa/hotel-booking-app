@@ -1,12 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+
 import FilterList from "./filterlist";
+import Search from "./Search";
+
 import { Link } from "react-router-dom";
 
 const List = ({ hotels }) => {
   return (
     <>
       <Container fluid className="p-0 m-0">
+        <Row className="m-4">
+          <Search />
+        </Row>
         <Row>
           <Col sm={3}>
             <FilterList />

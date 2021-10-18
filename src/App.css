@@ -25,6 +25,7 @@ img that aren't squares. */
 
 /* Bakgrund */
 body {
+  /* fade the img in PS */
   background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/40/empire-state-building-1081929_1280.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -114,4 +115,15 @@ a:link {
 }
 .fridas-btn {
   background-color: rgb(20, 20, 20);
+}
+.quote {
+  font-family: "eloquent-jf-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+.details-img {
+  max-width: 300px;
+  background-color: antiquewhite;
+  padding: 2rem;
 }

@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 
+// Data
 import data from "./components/data";
 
+// Components
 import List from "./components/List";
-import Search from "./components/Search";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Hotel from "./components/hotel";
+import Home from "./components/Home";
 
+// Styling
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
-import { Container, Row, Col } from "react-bootstrap";
+// Routing
+import { Switch, Route } from "react-router-dom";
 
-import { Switch, Route, Redirect } from "react-router-dom";
-
+// FontAwesome
 import { library } from "@fortawesome/fontawesome-svg-core";
-
 import {
   faStar,
   faStarHalfAlt,
@@ -25,7 +27,6 @@ import {
   faCalendar,
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
-
 library.add(faStar, faStarHalfAlt, faMapMarkerAlt, faCalendar, faUserFriends);
 
 function App() {
@@ -36,9 +37,9 @@ function App() {
     <main>
       <div className="everything-but-footer">
         <Header />
-        <Search />
 
         <Switch>
+          <Route exact path="/" component={Home}></Route>
           <Route path="/list" render={() => <List hotels={hotels} />}></Route>
           <Route path="/hotel/:id" component={Hotel}></Route>
         </Switch>
