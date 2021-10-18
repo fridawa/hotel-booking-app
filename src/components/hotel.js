@@ -3,14 +3,16 @@ import { useParams } from "react-router";
 import data from "./data";
 
 function Hotel() {
-  const { hotelsId } = useParams();
-  const thisProduct = data.find((prod) => prod.id === hotelsId);
-  console.log(hotelsId);
-  console.log(thisProduct);
+  const { id } = useParams();
+  console.log(id);
+
+  let thisHotel = data.find((prod) => prod.id === 2);
+  console.log(thisHotel);
 
   return (
     <div>
-      <h1>{hotelsId}</h1>
+      <h1>{thisHotel.name}</h1>
+      <p></p>
     </div>
   );
 }

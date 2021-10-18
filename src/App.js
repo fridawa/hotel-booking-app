@@ -39,10 +39,7 @@ function App() {
 
       <Switch>
         <Route path="/list" render={() => <List hotels={hotels} />}></Route>
-        <Route
-          path="/hotel/:hotelsId"
-          render={() => <Hotel hotels={hotels} />}
-        ></Route>
+        <Route path="/hotel/:id" component={Hotel}></Route>
       </Switch>
 
       <Footer />

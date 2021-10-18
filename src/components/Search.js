@@ -51,9 +51,9 @@ const Search = () => {
               </Col>
             </Row>
           </Col>
-          <Col md={4} className="fridas-border-2">
+          <Col md={5} className="fridas-border-2">
             <Row>
-              <Col md={2} className="fridas-icon-2">
+              <Col md={1} className="fridas-icon-2">
                 <p className="">
                   <FontAwesomeIcon icon="calendar" />
                 </p>
@@ -93,7 +93,7 @@ const Search = () => {
               </Col>
             </Row>
           </Col>
-          <Col md={2}>
+          <Col md={1} className="p-2 fridas-btn">
             <Link to={"/list/"}>
               <button type="button" className="my-btn">
                 Search
