@@ -34,14 +34,15 @@ function App() {
 
   return (
     <main>
-      <Header />
-      <Search />
+      <div className="everything-but-footer">
+        <Header />
+        <Search />
 
-      <Switch>
-        <Route path="/list" render={() => <List hotels={hotels} />}></Route>
-        <Route path="/hotel/:id" component={Hotel}></Route>
-      </Switch>
-
+        <Switch>
+          <Route path="/list" render={() => <List hotels={hotels} />}></Route>
+          <Route path="/hotel/:id" component={Hotel}></Route>
+        </Switch>
+      </div>
       <Footer />
     </main>
   );

@@ -6,12 +6,15 @@ function Hotel() {
   const { id } = useParams();
   console.log(id);
 
-  let thisHotel = data.find((prod) => prod.id === 2);
+  var hotelIdInt = parseInt(id, 10);
+
+  let thisHotel = data.find((prod) => prod.id === hotelIdInt);
   console.log(thisHotel);
 
   return (
     <div>
       <h1>{thisHotel.name}</h1>
+      <h1>{thisHotel.price}</h1>
       <p></p>
     </div>
   );

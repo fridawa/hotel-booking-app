@@ -100,13 +100,12 @@ hr.fridas-border {
 hr {
   border: 0;
 }
-
-/* footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-} */
-
+.everything-but-footer {
+  min-height: calc(100vh - 95px);
+}
+footer {
+  min-height: 100px;
+}
 .detailedpage {
   background-color: #ffffff;
 }

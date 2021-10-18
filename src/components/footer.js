@@ -40,8 +40,10 @@ const Footer = () => {
               </Col>
             </nav>
           </Row>
-          <Row>
-            <p className="text-center text-light footer-copy">Copyright 2022</p>
+          <Row className="p-0 m-0">
+            <p className="text-center text-light footer-copy m-0 p-0">
+              Copyright 2022
+            </p>
           </Row>
         </footer>
       </Container>
