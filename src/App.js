@@ -6,7 +6,7 @@ import List from "./components/List";
 import Search from "./components/Search";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import FilterList from "./components/filterlist";
+import Hotel from "./components/hotel";
 
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +14,10 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 import { Container, Row, Col } from "react-bootstrap";
 
+import { Switch, Route, Redirect } from "react-router-dom";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
+
 import {
   faStar,
   faStarHalfAlt,
@@ -28,29 +31,21 @@ library.add(faStar, faStarHalfAlt, faMapMarkerAlt, faCalendar, faUserFriends);
 function App() {
   //importerar datan från data
   const [hotels, setHotels] = useState(data);
-  console.log(hotels);
 
   return (
     <main>
-      <Container fluid>
-        <Row>
-          <Header />
-        </Row>
-        <Row>
-          <Search />
-        </Row>
-        <Row className="m-2">
-          <Col sm={3} className="m-0">
-            <FilterList />
-          </Col>
-          <Col sm={9} className="p-0 m-0">
-            <List hotels={hotels} />
-          </Col>
-        </Row>
-        <Row>
-          <Footer />
-        </Row>
-      </Container>
+      <Header />
+      <Search />
+
+      <Switch>
+        <Route path="/list" render={() => <List hotels={hotels} />}></Route>
+        <Route
+          path="/hotel/:hotelsId"
+          render={() => <Hotel hotels={hotels} />}
+        ></Route>
+      </Switch>
+
+      <Footer />
     </main>
   );
 }

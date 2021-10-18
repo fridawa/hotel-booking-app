@@ -74,7 +74,7 @@ export default [
     ],
   },
   {
-    id: 1,
+    id: 2,
     name: "Hotel one",
     adress: "363 Barca street",
     location: "Barcelona",
@@ -148,7 +148,7 @@ export default [
     ],
   },
   {
-    id: 1,
+    id: 3,
     name: "Hotel one",
     adress: "363 Barca street",
     location: "Barcelona",

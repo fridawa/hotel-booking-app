@@ -63,17 +63,27 @@ body {
   font-size: 1rem;
   border-radius: 0rem 1.5rem 1.5rem 0rem;
 }
-.location-search {
+.fridas-border-1 {
   border-radius: 1.5rem 0rem 0rem 1.5rem;
+  border: 2px solid rgb(20, 20, 20);
 }
-.date-search {
-  border-top: 1px solid #212529;
-  border-bottom: 1px solid #212529;
+.fridas-border-2 {
+  border-radius: 0rem 0rem 0rem 0rem;
+  border: 2px solid rgb(20, 20, 20);
+}
+.fridas-border-3 {
+  border-radius: 0rem 0rem 0rem 0rem;
+  border: 2px solid rgb(20, 20, 20);
   z-index: 1;
 }
-.gueast-search {
-  /* So it doesnt hide the guest-input-field */
-  z-index: 2;
+.fridas-icon-1 {
+  background-color: rgb(20, 20, 20);
+  border-radius: 100%;
+  color: #ffffff;
+}
+.fridas-icon-2 {
+  background-color: rgb(20, 20, 20);
+  color: #ffffff;
 }
 
 /* Filter List */
@@ -90,4 +100,16 @@ hr.fridas-border {
 }
 hr {
   border: 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.detailedpage {
+  background-color: #ffffff;
+}
+a:link {
+  text-decoration: none;
 }

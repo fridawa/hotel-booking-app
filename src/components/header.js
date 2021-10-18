@@ -1,14 +1,16 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <header>
-        <nav className="navbar navbar-expand-md ">
-          <div className="container-fluid">
-            <a className="navbar-brand text-light ps-4" href="#">
-              destination.com
-            </a>
+      <Container fluid>
+        <header>
+          <nav className="navbar navbar-expand-md ">
+            <Link to={"/"}>
+              <a className="navbar-brand text-light ps-4">destination.com</a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -22,13 +24,15 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav ">
-                <a
-                  className="nav-link text-light active "
-                  aria-current="page"
-                  href="#"
-                >
-                  Home
-                </a>
+                <Link to={"/"}>
+                  <a
+                    className="nav-link text-light active "
+                    aria-current="page"
+                    href="#"
+                  >
+                    Home
+                  </a>
+                </Link>
                 <a className="nav-link text-light" href="#">
                   Hotels
                 </a>
@@ -37,9 +41,9 @@ const Header = () => {
                 </a>
               </div>
             </div>
-          </div>
-        </nav>
-      </header>
+          </nav>
+        </header>
+      </Container>
     </>
   );
 };

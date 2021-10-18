@@ -1,31 +1,18 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { useParams } from "react-router";
+import data from "./data";
 
-const Hotel = ({ hotels }) => {
+function Hotel() {
+  const { hotelsId } = useParams();
+  const thisProduct = data.find((prod) => prod.id === hotelsId);
+  console.log(hotelsId);
+  console.log(thisProduct);
+
   return (
-    <>
-      {hotels.map((hotel) => {
-        const { id, roomImg } = hotel;
-
-        return (
-          <Container>
-            <article key={id}>
-              <Row>
-                <div className="hotel-img-div d-flex justify-content-start col-12">
-                  <div>
-                    <img className="hotel-img col-12" src={roomImg} />
-                  </div>
-                  <div>
-                    <img className="hotel-img col-12" src={roomImg} />
-                  </div>
-                </div>
-              </Row>
-            </article>
-          </Container>
-        );
-      })}
-    </>
+    <div>
+      <h1>{hotelsId}</h1>
+    </div>
   );
-};
+}
 
 export default Hotel;

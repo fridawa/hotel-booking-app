@@ -9,27 +9,27 @@ const FilterList = () => {
         <Row>
           <div className="h5">Number of stars</div>
           <Row>
-            <Col>
+            <Col xs={2}>
               <p>
                 <FontAwesomeIcon icon="star" />
               </p>
             </Col>
-            <Col>
+            <Col xs={2}>
               <p>
                 <FontAwesomeIcon icon="star" />
               </p>
             </Col>
-            <Col>
+            <Col xs={2}>
               <p>
                 <FontAwesomeIcon icon="star" />
               </p>
             </Col>
-            <Col>
+            <Col xs={2}>
               <p>
                 <FontAwesomeIcon icon="star" />
               </p>
             </Col>
-            <Col>
+            <Col xs={2}>
               <p>
                 <FontAwesomeIcon icon="star-half-alt" />
               </p>

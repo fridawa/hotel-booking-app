@@ -5,11 +5,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { addDays } from "date-fns";
 
-import { DateRange } from "react-date-range";
-import "react-date-range/dist/styles.css"; // main css file
-import "react-date-range/dist/theme/default.css"; // theme css file
-
-import { Collapse, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -37,11 +33,11 @@ const Search = () => {
 
   return (
     <div>
-      <Container fluid className="searchbar m-0 p-0">
+      <Container className="searchbar mt-4 mb-2 p-3">
         <Row className="p-2">
-          <Col md={3} className=" border">
+          <Col md={3} className="fridas-border-1">
             <Row>
-              <Col md={2}>
+              <Col md={2} className="fridas-icon-1">
                 <p>
                   <FontAwesomeIcon icon="map-marker-alt" />
                 </p>
@@ -51,17 +47,13 @@ const Search = () => {
                   className=" border-0 text-center pt-2 pb-2 ps-3"
                   type="search"
                   placeholder="Search for location"
-                  // onChange={(event) => {
-                  //   setSearchTerm(event.target.value);
-                  // }}
-                  // onKeyUp={searchFunction}
                 ></input>
               </Col>
             </Row>
           </Col>
-          <Col md={4}>
+          <Col md={4} className="fridas-border-2">
             <Row>
-              <Col md={2}>
+              <Col md={2} className="fridas-icon-2">
                 <p className="">
                   <FontAwesomeIcon icon="calendar" />
                 </p>
@@ -85,9 +77,9 @@ const Search = () => {
               </Col>
             </Row>
           </Col>
-          <Col md={3}>
+          <Col md={3} className="fridas-border-3">
             <Row>
-              <Col md={2}>
+              <Col md={2} className="fridas-icon-2">
                 <p>
                   <FontAwesomeIcon icon="user-friends" />
                 </p>
@@ -97,18 +89,16 @@ const Search = () => {
                   className=" border-0 text-center pt-2 pb-2"
                   type="search"
                   placeholder="Number of guests"
-                  // onChange={(event) => {
-                  //   setSearchTerm(event.target.value);
-                  // }}
-                  // onKeyUp={searchFunction}
                 ></input>
               </Col>
             </Row>
           </Col>
           <Col md={2}>
-            <button type="button" className="my-btn">
-              Search
-            </button>
+            <Link to={"/list/"}>
+              <button type="button" className="my-btn">
+                Search
+              </button>
+            </Link>
           </Col>
         </Row>
       </Container>

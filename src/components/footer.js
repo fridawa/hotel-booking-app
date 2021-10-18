@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Footer = () => {
   return (
     <>
-      <Container>
+      <Container fluid>
         <footer>
           <Row>
             <nav className="navbar">
