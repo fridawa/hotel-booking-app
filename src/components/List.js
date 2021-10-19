@@ -13,7 +13,7 @@ const List = ({ hotels }) => {
         <Row className="m-4">
           <Search />
         </Row>
-        <Row className="ps-3 pe-3">
+        <Row className="ps-3">
           <Col sm={3}>
             <FilterList />
           </Col>
@@ -34,7 +34,10 @@ const List = ({ hotels }) => {
 
               return (
                 <Col sm={12} className="">
-                  <article className=" hotel-search-container mb-3 " key={id}>
+                  <article
+                    className=" hotel-search-container mb-3 me-3"
+                    key={id}
+                  >
                     <Row>
                       <Col sm={3}>
                         <div className="image">
@@ -61,7 +64,8 @@ const List = ({ hotels }) => {
                             </>
                           );
                         })}
-                        <p className="m-0">{faclitiesShort}</p>
+
+                        <p className="m-0">{faclitiesShort.join(" ")}</p>
                       </Col>
                       <Col sm={3}>
                         <p className="m-0">{rating}</p>

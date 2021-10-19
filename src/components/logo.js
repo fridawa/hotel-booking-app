@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 const Logo = () => {
   return (
     <>
-      <img className="logo" src="/images/logo.png"></img>
+      <img className="logo " src="/images/logo.png"></img>
     </>
   );
 };

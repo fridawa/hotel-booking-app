@@ -64,7 +64,7 @@ function Hotel() {
             {rooms.map((room) => {
               return (
                 <>
-                  <Row className="pt-3">
+                  <Row className="pt-4 pb-4">
                     <Col>
                       <p>{room.roomType}</p>
                       <div className="image">

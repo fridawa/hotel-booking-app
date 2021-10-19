@@ -101,13 +101,14 @@ body {
 /* Filter List */
 .filterlist-container {
   background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 /* Rounded border */
 hr.fridas-border {
   border-top: 1px solid rgb(119, 119, 119);
   border-radius: 5px;
-  max-width: 85%;
+  max-width: 100%;
   margin: auto;
 }
 hr {
@@ -140,4 +141,43 @@ a:link {
 }
 .hotel-details {
   background-color: #ffffff;
+}
+
+/* Från https://blog.logrocket.com/react-slider-tutorial/ */
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 4rem;
+  margin: auto;
+}
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  border: 5px solid #3774ff;
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+.example-track.example-track-0 {
+  background: #83a9ff;
+}
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 4px;
+}
+.horizontal-slider .example-thumb {
+  top: 12px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
 }
