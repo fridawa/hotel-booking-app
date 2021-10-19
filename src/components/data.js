@@ -13,17 +13,20 @@ export default [
       {
         roomType: "Two single bed room",
         spec: ["Two single beds", "2 adults, 1 child", "20 m²", "Free wifi"],
-        accessibility: ["Wheelchair friendly, Room at ground level"],
+        accessibility: ["Wheelchair friendly", "Room at ground level"],
+        price: 150,
       },
       {
         roomType: "Comfort Room",
-        spec: ["Two single beds", "2 adults, 1 child", "20 m²", "Free wifi"],
-        accessibility: ["Wheelchair friendly, Room at ground level"],
+        spec: ["Queen size bed", "2 adults, 1 child", "25 m²", "Free wifi"],
+        accessibility: ["Wheelchair friendly", "Room at ground level"],
+        price: 150,
       },
       {
         roomType: "Deluxe Room",
-        spec: ["Two single beds", "2 adults, 1 child", "20 m²", "Free wifi"],
-        accessibility: ["Wheelchair friendly, Room at ground level"],
+        spec: ["King size bed", "2 adults, 1 child", "45 m²", "Free wifi"],
+        accessibility: ["Wheelchair friendly", "Room at ground level"],
+        price: 150,
       },
     ],
     facilites: [
@@ -72,6 +75,8 @@ export default [
       "https://cdn.pixabay.com/photo/2014/07/10/17/17/hotel-389256_1280.jpg",
       "https://cdn.pixabay.com/photo/2014/07/10/17/17/hotel-389256_1280.jpg",
     ],
+    bedImg:
+      "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
   },
   {
     id: 2,

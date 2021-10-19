@@ -45,7 +45,13 @@ const List = ({ hotels }) => {
                         <p className="m-0">{name}</p>
                         <p className="m-0">{adress}</p>
                         <p className="m-0">{location}</p>
-                        <p className="m-0">{locationFacts.join(" ")} </p>
+                        {locationFacts.map((fact) => {
+                          return (
+                            <>
+                              <p className="m-0">{fact}</p>
+                            </>
+                          );
+                        })}
                       </Col>
                       <Col sm={3}>
                         {rooms.map((room) => {
