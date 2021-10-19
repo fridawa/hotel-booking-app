@@ -1,6 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Logo from "./logo";
 
 const Header = () => {
   return (
@@ -9,10 +11,12 @@ const Header = () => {
         <header>
           <nav className="navbar navbar-expand-md ">
             <Link to={"/"}>
-              <a className="navbar-brand text-light ps-4">destination.com</a>
+              <a className="navbar-brand text-light ps-4">
+                <Logo />
+              </a>
             </Link>
             <button
-              className="navbar-toggler"
+              className="navbar-toggler "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -20,9 +24,14 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon ">
+                <FontAwesomeIcon icon="bars" />
+              </span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div
+              className="collapse navbar-collapse text-light"
+              id="navbarNavAltMarkup"
+            >
               <div className="navbar-nav ">
                 <Link to={"/"}>
                   <a

@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Logo from "./logo";
 
 const Footer = () => {
   return (
     <>
       <Container fluid>
-        <footer>
+        <footer className="footer">
           <Row>
             <nav className="navbar">
               <Col sm={4}>
@@ -39,6 +40,9 @@ const Footer = () => {
                 </ul>
               </Col>
             </nav>
+          </Row>
+          <Row>
+            <Logo />
           </Row>
           <Row className="p-0 m-0">
             <p className="text-center text-light footer-copy m-0 p-0">

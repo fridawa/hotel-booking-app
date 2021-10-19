@@ -13,7 +13,7 @@ const List = ({ hotels }) => {
         <Row className="m-4">
           <Search />
         </Row>
-        <Row>
+        <Row className="ps-3 pe-3">
           <Col sm={3}>
             <FilterList />
           </Col>

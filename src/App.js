@@ -3,17 +3,17 @@ import React, { useState } from "react";
 // Data
 import data from "./components/data";
 
+// Styling
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+
 // Components
 import List from "./components/List";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import Hotel from "./components/hotel";
 import Home from "./components/Home";
-
-// Styling
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
 
 // Routing
 import { Switch, Route } from "react-router-dom";
@@ -26,8 +26,16 @@ import {
   faMapMarkerAlt,
   faCalendar,
   faUserFriends,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(faStar, faStarHalfAlt, faMapMarkerAlt, faCalendar, faUserFriends);
+library.add(
+  faStar,
+  faStarHalfAlt,
+  faMapMarkerAlt,
+  faCalendar,
+  faUserFriends,
+  faBars
+);
 
 function App() {
   //importerar datan från data

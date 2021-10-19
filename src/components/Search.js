@@ -33,7 +33,7 @@ const Search = () => {
 
   return (
     <div>
-      <Container className="searchbar ">
+      <Container className="searchbar ps-5 pe-5 pt-3 pb-3">
         <Row className="p-2">
           <Col md={3} className="fridas-border-1">
             <Row>
