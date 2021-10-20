@@ -7,8 +7,10 @@ const Quote = () => {
       <Container fluid>
         <Row>
           <Col>
-            <h1 className="ps-4 pt-4 pb-0 m-0 quote">Let's find</h1>
-            <h1 className="ps-5 pt-0 pb-3 m-0 quote">your new adventure</h1>
+            <p className="ps-4 pt-4 pb-0 m-0 quote quote-italic">Let's find</p>
+            <p className="ps-5 pt-0 pb-3 m-0 quote quote-bigger">
+              your new adventure
+            </p>
           </Col>
         </Row>
       </Container>

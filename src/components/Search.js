@@ -37,16 +37,17 @@ const Search = () => {
         <Row className="p-2">
           <Col md={3} className="fridas-border-1">
             <Row>
-              <Col md={2} className="fridas-icon-1">
-                <p>
+              <Col md={2} className="fridas-icon-1 ">
+                <p className="pt-2 m-0 text-center">
                   <FontAwesomeIcon icon="map-marker-alt" />
                 </p>
               </Col>
-              <Col md={10}>
+              <Col md={10} className="p-0 p">
                 <input
-                  className=" border-0 text-center pt-2 pb-2 ps-3"
+                  className=" border-0 pt-2 pb-2 ps-3"
                   type="search"
-                  placeholder="Search for location"
+                  placeholder="Where do you want to go?"
+                  style={{ width: "120%" }}
                 ></input>
               </Col>
             </Row>
@@ -54,7 +55,7 @@ const Search = () => {
           <Col md={5} className="fridas-border-2">
             <Row>
               <Col md={1} className="fridas-icon-2">
-                <p className="">
+                <p className="pt-2 m-0 text-center">
                   <FontAwesomeIcon icon="calendar" />
                 </p>
               </Col>
@@ -80,15 +81,16 @@ const Search = () => {
           <Col md={3} className="fridas-border-3">
             <Row>
               <Col md={2} className="fridas-icon-2">
-                <p>
+                <p className="pt-2 m-0 text-center">
                   <FontAwesomeIcon icon="user-friends" />
                 </p>
               </Col>
               <Col md={10}>
                 <input
-                  className=" border-0 text-center pt-2 pb-2"
+                  className=" border-0  pt-2 pb-2"
                   type="search"
                   placeholder="Number of guests"
+                  style={{ width: "100%" }}
                 ></input>
               </Col>
             </Row>

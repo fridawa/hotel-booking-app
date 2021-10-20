@@ -16,7 +16,7 @@ function Hotel() {
   let thisHotel = data.find((prod) => prod.id === hotelIdInt);
 
   // const for images for clearer syntax inside map function below
-  const roomimages = thisHotel.roomImg;
+  const hotelimages = thisHotel.hotelImg;
   const rooms = thisHotel.rooms;
   const facilities = thisHotel.facilites;
 
@@ -29,50 +29,76 @@ function Hotel() {
       <div className="hotel-details m-3 p-3">
         <Row>
           <Col xs={6}>
-            <p>{thisHotel.name}</p>
-            <p>{thisHotel.adress}</p>
-            <p>{thisHotel.location}</p>
+            <p className="hotel-bold">{thisHotel.name}</p>
+            <p className="hotel-adress">{thisHotel.adress}</p>
+            <p className="hotel-bold">{thisHotel.location}</p>
           </Col>
           <Col xs={{ span: 2, offset: 4 }}>
-            <p>{thisHotel.price}</p>
-            <button>Choose Room</button>
+            <p className="hotel-bold hotel-price d-flex justify-content-end">
+              {thisHotel.price}
+            </p>
+            <div className="d-flex justify-content-end">
+              <a href="#roomtypes">
+                <button className="btn-book btn btn-dark">Choose Room</button>
+              </a>
+            </div>
           </Col>
         </Row>
         <Row>
           <Col xs={6}>
-            <div>
-              {roomimages.map((img) => {
+            <div className="d-flex flex-wrap justify-content-start ">
+              {hotelimages.map((img) => {
                 return (
                   <>
-                    <img className="details-img" src={img}></img>
+                    <Col xs={6}>
+                      <img className="details-img p-1" src={img}></img>
+                    </Col>
                   </>
                 );
               })}
             </div>
           </Col>
           <Col xs={6}>
-            <p>{thisHotel.rating}</p>
-            <p>{thisHotel.reviews}</p>
+            <div className="thumb-div">
+              <span class="fa-layers fa-fw ">
+                <i class="fas fa-thumbs-up rating-thumb"></i>
+                <span class="fa-layers-text fa-inverse rating-int">
+                  {thisHotel.rating}
+                </span>
+              </span>
+            </div>
+            {thisHotel.reviews.slice(0, 2).map((review) => {
+              return (
+                <>
+                  <p className="pt-2">{review}</p>
+                  <hr className="fridas-border"></hr>
+                </>
+              );
+            })}
           </Col>
         </Row>
         <Row className="pt-3">
-          <p>Description</p>
+          <p className="hotel-bold hotel-heading">Description</p>
           <p>{thisHotel.description}</p>
         </Row>
         <Row>
           <div>
+            <p className="hotel-bold hotel-heading mb-0 pt-3" id="roomtypes">
+              Room types
+            </p>
+
             {rooms.map((room) => {
               return (
                 <>
-                  <Row className="pt-4 pb-4">
+                  <Row className="pt-2 pb-4">
                     <Col>
-                      <p>{room.roomType}</p>
-                      <div className="image">
-                        <img className="img" src={thisHotel.bedImg}></img>
+                      <p className="hotel-bold">{room.roomType}</p>
+                      <div className="image-a mb-3">
+                        <img src={room.bedImg}></img>
                       </div>
                     </Col>
                     <Col>
-                      <p>Information</p>
+                      <p className="hotel-bold">Information</p>
                       {room.spec.map((s) => {
                         return (
                           <>
@@ -82,7 +108,7 @@ function Hotel() {
                       })}
                     </Col>
                     <Col>
-                      <p>Accessibility</p>
+                      <p className="hotel-bold">Accessibility</p>
                       {room.accessibility.map((a) => {
                         return (
                           <>
@@ -92,9 +118,16 @@ function Hotel() {
                       })}
                     </Col>
                     <Col>
-                      <p>{room.price}</p>
-                      <button>Book now</button>
+                      <p className="d-flex justify-content-end hotel-price ">
+                        ${room.price}
+                      </p>
+                      <div className="d-flex justify-content-end ">
+                        <button className="btn-book btn btn-dark ">
+                          Book now
+                        </button>
+                      </div>
                     </Col>
+                    <hr className="fridas-border"></hr>
                   </Row>
                 </>
               );
@@ -102,57 +135,66 @@ function Hotel() {
           </div>
         </Row>
         <div className="pt-4">
+          <p className="hotel-bold hotel-heading mb-0 pt-3">Facilities</p>
+
           {facilities.map((facility) => {
             return (
               <>
-                {" "}
                 <Row>
-                  <Col>
-                    <p>Services</p>
-                    {facility.services.map((s) => {
+                  <Col xs={4} md={3}>
+                    <p className="hotel-bold m-0  mb-1">Services</p>
+                    {facility.services.map((e) => {
                       return (
                         <>
-                          <p className="m-0">{s}</p>
+                          <ul>
+                            <li className="m-0">{e}</li>
+                          </ul>
                         </>
                       );
                     })}
                   </Col>
-                  <Col>
-                    <p>Food</p>
-                    {facility.food.map((f) => {
+                  <Col xs={4} md={3}>
+                    <p className="hotel-bold m-0  mb-1">Food</p>
+                    {facility.food.map((e) => {
                       return (
                         <>
-                          <p className="m-0">{f}</p>
+                          <ul>
+                            <li className="m-0">{e}</li>
+                          </ul>
                         </>
                       );
                     })}
                   </Col>
-                  <Col>
-                    <p>To Do</p>
-                    {facility.toDo.map((t) => {
+                  <Col xs={4} md={3}>
+                    <p className="hotel-bold m-0  mb-1">To Do</p>
+                    {facility.toDo.map((e) => {
+                      return (
+                        <ul>
+                          <li className="m-0">{e}</li>
+                        </ul>
+                      );
+                    })}
+                  </Col>
+                  <Col xs={4} md={3}>
+                    <p className="hotel-bold m-0 mb-1">Accessibility</p>
+                    {facility.accessibility.map((e) => {
                       return (
                         <>
-                          <p className="m-0">{t}</p>
+                          <ul>
+                            <li className="m-0">{e}</li>
+                          </ul>
                         </>
                       );
                     })}
                   </Col>
-                  <Col>
-                    <p>Accessibility</p>
-                    {facility.accessibility.map((a) => {
+                  <Col xs={4} md={3}>
+                    <p className="hotel-bold m-0  mb-1">Other</p>
+                    {facility.other.map((e) => {
                       return (
                         <>
-                          <p className="m-0">{a}</p>
-                        </>
-                      );
-                    })}
-                  </Col>
-                  <Col>
-                    <p>Other</p>
-                    {facility.other.map((o) => {
-                      return (
-                        <>
-                          <p className="m-0">{o}</p>
+                          <ul>
+                            <li className="m-0">{e}</li>
+                          </ul>
                         </>
                       );
                     })}

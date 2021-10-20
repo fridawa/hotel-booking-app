@@ -1,100 +1,124 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ReactSlider from "react-slider";
+import { Rating } from "react-simple-star-rating";
+import { useState } from "react";
 
 const FilterList = () => {
+  // useState for star rating
+  const [rating, setRating] = useState(4);
+  // function for star rating
+  const handleRating = (rate) => {
+    setRating(rate);
+  };
   return (
     <>
       <Container className="filterlist-container p-4">
-        <Row>
-          <div className="h5">Number of stars</div>
-          <Row>
-            <Col xs={2}>
-              <p>
-                <FontAwesomeIcon icon="star" />
-              </p>
-            </Col>
-            <Col xs={2}>
-              <p>
-                <FontAwesomeIcon icon="star" />
-              </p>
-            </Col>
-            <Col xs={2}>
-              <p>
-                <FontAwesomeIcon icon="star" />
-              </p>
-            </Col>
-            <Col xs={2}>
-              <p>
-                <FontAwesomeIcon icon="star" />
-              </p>
-            </Col>
-            <Col xs={2}>
-              <p>
-                <FontAwesomeIcon icon="star-half-alt" />
-              </p>
-            </Col>
-          </Row>
-
-          <hr class="fridas-border"></hr>
+        <Row className="">
+          <div className="h5">Rating </div>
+          <Rating
+            onClick={handleRating}
+            ratingValue={rating}
+            className="pb-3"
+          />
+          <hr className="fridas-border"></hr>
         </Row>
         <Row>
-          <div className="h5">Price</div>
+          <div className="h5 pt-3">
+            Price <span className="review-span">$0 - $500+</span>
+          </div>
 
           <ReactSlider
             className="horizontal-slider"
             thumbClassName="example-thumb"
             trackClassName="example-track"
+            defaultValue={[0, 250]}
+            min="0"
+            max="500"
+            ariaLabel={["Lower thumb", "Upper thumb"]}
+            ariaValuetext={(state) => `Thumb value ${state.valueNow}`}
+            renderThumb={(props, state) => (
+              <div {...props}>${state.valueNow}</div>
+            )}
+          />
+          <hr className="fridas-border"></hr>
+        </Row>
+        <Row>
+          <div className="h5 pt-3">Accessability adapted</div>
+          <form className="pb-3">
+            <input
+              type="checkbox"
+              id="lowsink"
+              name="Accessability"
+              value="lowsink"
+            ></input>
+            <label for="lowsink" className=" ps-2 pb-1">
+              Lowered sink
+            </label>
+            <br></br>
+            <input
+              type="checkbox"
+              id="elevator"
+              name="Accessability"
+              value="elevator"
+            ></input>
+            <label for="elevator" className="ps-2 pb-1">
+              Elevator
+            </label>
+            <br></br>
+            <input
+              type="checkbox"
+              id="wheelchair"
+              name="Accessability"
+              value="wheelchair"
+            ></input>
+            <label for="wheelchair" className=" ps-2 pb-1">
+              Wheelchair accessible rooms
+            </label>
+            <br></br>
+
+            <input
+              type="checkbox"
+              id="groundlevel"
+              name="Accessability"
+              value="groundlevel"
+            ></input>
+            <label for="groundlevel" className="ps-2 pb-1">
+              Facility on ground evel
+            </label>
+            <br></br>
+            <input
+              type="checkbox"
+              id="alarm"
+              name="Accessability"
+              value="alarm"
+            ></input>
+            <label for="alarm" className="ps-2 pb-1">
+              Emergency alarm in bathrooms
+            </label>
+            <br></br>
+          </form>
+
+          <hr className="fridas-border"></hr>
+        </Row>
+        <Row>
+          <div className="h5 pt-3">
+            Guest review <span className="review-span">0-10</span>
+          </div>
+
+          <ReactSlider
+            className="horizontal-slider"
+            thumbClassName="example-thumb"
+            trackClassName="example-track"
+            defaultValue={[0, 5]}
+            min="0"
+            max="10"
+            ariaLabel={["Lower thumb", "Upper thumb"]}
             ariaValuetext={(state) => `Thumb value ${state.valueNow}`}
             renderThumb={(props, state) => (
               <div {...props}>{state.valueNow}</div>
             )}
           />
-          <hr class="fridas-border"></hr>
-        </Row>
-        <Row>
-          <div className="h5">Accessability adapted</div>
-          <form action="/action_page.php">
-            <input
-              type="checkbox"
-              id="vehicle1"
-              name="vehicle1"
-              value="Bike"
-            ></input>
-            <label for="vehicle1"> I have a bike</label>
-            <br></br>
-            <input
-              type="checkbox"
-              id="vehicle2"
-              name="vehicle2"
-              value="Car"
-            ></input>
-            <label for="vehicle2"> I have a car</label>
-            <br></br>
-
-            <input
-              type="checkbox"
-              id="vehicle3"
-              name="vehicle3"
-              value="Boat"
-            ></input>
-            <label for="vehicle3"> I have a boat</label>
-          </form>
-
-          <hr class="fridas-border"></hr>
-        </Row>
-        <Row>
-          <div className="h5">Guest review</div>
-          <ReactSlider
-            className="horizontal-slider"
-            thumbClassName="example-thumb"
-            trackClassName="example-track"
-            ariaValuetext={(state) => `Thumb value ${state.valueNow}`}
-            renderThumb={(props, state) => (
-              <div {...props}>{state.valueNow}</div>
-            )}
-          />{" "}
         </Row>
       </Container>
     </>
