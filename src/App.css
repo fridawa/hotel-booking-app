@@ -37,7 +37,10 @@ img that aren't squares. */
 
 /* Fonten på allt */
 * {
-  font-family: "sofia-pro-soft";
+  font-family: "sofia-pro", sans-serif;
+}
+.font-soft {
+  font-family: "sofia-pro-soft", sans-serif;
 }
 .logo {
   max-height: 2.2rem !important;
@@ -92,6 +95,11 @@ body {
   text-align: center;
   font-size: 1rem;
   /* border-radius: 0rem 1.5rem 1.5rem 0rem; */
+}
+.my-btn-small {
+  font-size: 0.7rem !important;
+  background-color: rgb(96, 96, 96) !important;
+  color: #ffffff !important;
 }
 .fridas-border-1 {
   /* border-radius: 1.5rem 0rem 0rem 1.5rem; */
@@ -230,6 +238,9 @@ Något anpassad till att passa min egen design */
 .hotel-bold {
   font-weight: 700;
 }
+.hotel-normal {
+  font-weight: 300;
+}
 
 .hotel-italic {
   font-style: italic;
@@ -259,4 +270,17 @@ Något anpassad till att passa min egen design */
 }
 .hotel-price {
   font-size: 1.7rem;
+}
+.hotel-heading-2 {
+  font-size: 2rem;
+}
+.read-all-link {
+  font-weight: 700;
+}
+.booking-page {
+  background-color: #ffffff;
+}
+
+.form-select {
+  border: 0px !important;
 }

@@ -29,9 +29,9 @@ function Hotel() {
       <div className="hotel-details m-3 p-3">
         <Row>
           <Col xs={6}>
-            <p className="hotel-bold">{thisHotel.name}</p>
-            <p className="hotel-adress">{thisHotel.adress}</p>
-            <p className="hotel-bold">{thisHotel.location}</p>
+            <h1 className="hotel-heading-2 m-0">{thisHotel.name}</h1>
+            <p className="hotel-adress m-0">{thisHotel.adress}</p>
+            <p className="hotel-bold m-0">{thisHotel.location}</p>
           </Col>
           <Col xs={{ span: 2, offset: 4 }}>
             <p className="hotel-bold hotel-price d-flex justify-content-end">
@@ -67,7 +67,7 @@ function Hotel() {
                 </span>
               </span>
             </div>
-            {thisHotel.reviews.slice(0, 2).map((review) => {
+            {thisHotel.reviews.slice(0, 3).map((review) => {
               return (
                 <>
                   <p className="pt-2">{review}</p>
@@ -75,6 +75,11 @@ function Hotel() {
                 </>
               );
             })}
+            <a href="#" className="read-all-link">
+              <p className="read-all-link">
+                Read all {thisHotel.reviews.length} reviews
+              </p>
+            </a>
           </Col>
         </Row>
         <Row className="pt-3">
@@ -122,9 +127,11 @@ function Hotel() {
                         ${room.price}
                       </p>
                       <div className="d-flex justify-content-end ">
-                        <button className="btn-book btn btn-dark ">
-                          Book now
-                        </button>
+                        <Link to={"/booking/"}>
+                          <button className="btn-book btn btn-dark ">
+                            Book now
+                          </button>
+                        </Link>
                       </div>
                     </Col>
                     <hr className="fridas-border"></hr>

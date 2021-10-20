@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -33,7 +33,7 @@ const Search = () => {
 
   return (
     <div>
-      <Container className="searchbar ps-5 pe-5 pt-3 pb-3">
+      <Container className="searchbar ps-5 pe-5 pt-3 pb-3 ">
         <Row className="p-2">
           <Col md={3} className="fridas-border-1">
             <Row>
@@ -44,7 +44,7 @@ const Search = () => {
               </Col>
               <Col md={10} className="p-0 p">
                 <input
-                  className=" border-0 pt-2 pb-2 ps-3"
+                  className=" border-0 pt-2 pb-2 ps-3 font-soft"
                   type="search"
                   placeholder="Where do you want to go?"
                   style={{ width: "120%" }}
@@ -61,7 +61,7 @@ const Search = () => {
               </Col>
               <Col md={5}>
                 <DatePicker
-                  className="border-0 text-lg-center text-sm-left pt-2 pb-2"
+                  className="border-0 text-lg-center text-sm-left pt-2 pb-2 font-soft"
                   selected={checkInDate}
                   onChange={(date) => setCheckInDate(date)}
                   minDate={new Date()}
@@ -70,7 +70,7 @@ const Search = () => {
               </Col>
               <Col md={5}>
                 <DatePicker
-                  className="border-0 text-lg-center text-sm-left pt-2 pb-2 "
+                  className="border-0 text-lg-center text-sm-left pt-2 pb-2 font-soft"
                   selected={checkOutDate}
                   onChange={(date) => setCheckOutDate(date)}
                   minDate={checkInDate}
@@ -79,25 +79,35 @@ const Search = () => {
             </Row>
           </Col>
           <Col md={3} className="fridas-border-3">
-            <Row>
+            <Row className="">
               <Col md={2} className="fridas-icon-2">
                 <p className="pt-2 m-0 text-center">
                   <FontAwesomeIcon icon="user-friends" />
                 </p>
               </Col>
               <Col md={10}>
-                <input
-                  className=" border-0  pt-2 pb-2"
-                  type="search"
-                  placeholder="Number of guests"
-                  style={{ width: "100%" }}
-                ></input>
+                <Form.Select
+                  aria-label="Default select example"
+                  className=" pt-2 pb-2 font-soft"
+                >
+                  <option>Number of guests</option>
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="3">4 guests</option>
+                  <option value="3">5 guests</option>
+                  <option value="3">6 guests</option>
+                  <option value="3">7 guests</option>
+                  <option value="3">8 guests</option>
+                  <option value="3">9 guests</option>
+                  <option value="3">10 guests</option>
+                </Form.Select>
               </Col>
             </Row>
           </Col>
           <Col md={1} className="p-2 fridas-btn">
             <Link to={"/list/"}>
-              <button type="button" className="my-btn">
+              <button type="button" className="my-btn font-soft">
                 Search
               </button>
             </Link>

@@ -35,17 +35,17 @@ const Header = () => {
               <div className="navbar-nav ">
                 <Link to={"/"}>
                   <a
-                    className="nav-link text-light active "
+                    className="nav-link text-light active font-soft"
                     aria-current="page"
                     href="#"
                   >
                     Home
                   </a>
                 </Link>
-                <a className="nav-link text-light" href="#">
+                <a className="nav-link text-light font-soft" href="#">
                   Hotels
                 </a>
-                <a className="nav-link text-light" href="#">
+                <a className="nav-link text-light font-soft" href="#">
                   Flights
                 </a>
               </div>

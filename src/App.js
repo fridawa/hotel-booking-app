@@ -14,6 +14,9 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Hotel from "./components/hotel";
 import Home from "./components/Home";
+import Booking from "./components/booking";
+
+import ScrollToTop from "./components/ScrollToTop";
 
 // Routing
 import { Switch, Route } from "react-router-dom";
@@ -45,12 +48,14 @@ function App() {
     <main>
       <div className="everything-but-footer">
         <Header />
-
-        <Switch>
-          <Route exact path="/" component={Home}></Route>
-          <Route path="/list" render={() => <List hotels={hotels} />}></Route>
-          <Route path="/hotel/:id" component={Hotel}></Route>
-        </Switch>
+        <ScrollToTop>
+          <Switch>
+            <Route exact path="/" component={Home}></Route>
+            <Route path="/list" render={() => <List hotels={hotels} />}></Route>
+            <Route path="/hotel/:id" component={Hotel}></Route>
+            <Route path="/booking" component={Booking}></Route>
+          </Switch>
+        </ScrollToTop>
       </div>
       <Footer />
     </main>

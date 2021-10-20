@@ -12,35 +12,39 @@ const Footer = () => {
               <Col sm={4}>
                 <ul className="text-center list-unstyled">
                   <li>
-                    <a className="nav-link text-light">About</a>
+                    <a className="nav-link text-light font-soft">About</a>
                   </li>
                   <li>
-                    <a className="nav-link text-light">Work with us</a>
+                    <a className="nav-link text-light font-soft">
+                      Work with us
+                    </a>
                   </li>
                 </ul>
               </Col>
               <Col sm={4}>
-                <ul className="text-center list-unstyled">
+                <ul className="text-center list-unstyled ">
                   <li>
-                    <a className="nav-link text-light">Support</a>
+                    <a className="nav-link text-light font-soft">Support</a>
                   </li>
                   <li>
-                    <a className="nav-link text-light">
+                    <a className="nav-link text-light font-soft">
                       Frequently asked questions
                     </a>
                   </li>
                   <li>
-                    <a className="nav-link text-light">Terms of use </a>
+                    <a className="nav-link text-light font-soft">
+                      Terms of use{" "}
+                    </a>
                   </li>
                 </ul>
               </Col>
               <Col sm={4}>
                 <ul className="text-center list-unstyled">
                   <li>
-                    <a className="nav-link text-light">Faceboook</a>
+                    <a className="nav-link text-light font-soft">Faceboook</a>
                   </li>
                   <li>
-                    <a className="nav-link text-light">Twitter</a>
+                    <a className="nav-link text-light font-soft">Twitter</a>
                   </li>
                 </ul>
               </Col>
@@ -50,7 +54,7 @@ const Footer = () => {
             <Logo />
           </Row>
           <Row className="m-0 pb-4">
-            <p className="text-center text-light footer-copy m-0 p-0">
+            <p className="text-center text-light footer-copy m-0 p-0 font-soft">
               Copyright 2022
             </p>
           </Row>
