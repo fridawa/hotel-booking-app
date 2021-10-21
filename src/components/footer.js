@@ -13,7 +13,7 @@ const Footer = () => {
     <>
       <Container fluid>
         <footer className="footer">
-          <Row className="pt-3">
+          <Row className="pt-1">
             <nav className="navbar">
               <Col sm={4}>
                 <ul className="text-center list-unstyled">
@@ -61,7 +61,7 @@ const Footer = () => {
               <Logo />
             </Link>
           </Row>
-          <Row className="m-0 pb-4">
+          <Row className="m-0 pb-3">
             <p className="text-center text-light footer-copy m-0 p-0 font-soft">
               Copyright 2022
             </p>

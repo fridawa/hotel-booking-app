@@ -9,12 +9,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 
 // Components
-import List from "./components/List";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Hotel from "./components/hotel";
 import Home from "./components/Home";
+import List from "./components/List";
+import Hotel from "./components/hotel";
 import Booking from "./components/booking";
+
 import ScrollToTop from "./components/ScrollToTop";
 
 // Routing

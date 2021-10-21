@@ -140,10 +140,10 @@ hr {
   border: 0;
 }
 .everything-but-footer {
-  min-height: calc(100vh - 95px);
+  min-height: calc(100vh - 32vh);
 }
 footer {
-  min-height: 100px;
+  min-height: 32vh;
 }
 .detailedpage {
   background-color: #ffffff;

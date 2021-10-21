@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 // This function is a toggle function for the payment alternatives.
 // If the user selects "pay now" a drop down i toggled with card input details

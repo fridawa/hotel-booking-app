@@ -66,7 +66,7 @@ export default [
     ],
     faclitiesShort: ["Bar", "Pool", "Restaurant", "Gym", "Spa"],
     description:
-      "Guests of Loews Hollywood are greeted by a 24-hour reception. For convenience, the hotel offers a 24-hour self-service business centre with computers, copy machines, fax machines and 24-hour concierge services. A fitness centre and yoga room are featured on the fifth floor and offer views of the surrounding city.",
+      "Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.",
     rating: 6,
     reviews: [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
@@ -157,7 +157,7 @@ export default [
     ],
     faclitiesShort: ["Bar", "Pool", "Restaurant", "Gym", "Spa"],
     description:
-      "Guests of Loews Hollywood are greeted by a 24-hour reception. For convenience, the hotel offers a 24-hour self-service business centre with computers, copy machines, fax machines and 24-hour concierge services. A fitness centre and yoga room are featured on the fifth floor and offer views of the surrounding city.",
+      "Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.",
     rating: 7,
     reviews: [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
@@ -242,7 +242,7 @@ export default [
     ],
     faclitiesShort: ["Bar", "Pool", "Restaurant", "Ocean view"],
     description:
-      "Guests of Loews Hollywood are greeted by a 24-hour reception. For convenience, the hotel offers a 24-hour self-service business centre with computers, copy machines, fax machines and 24-hour concierge services. A fitness centre and yoga room are featured on the fifth floor and offer views of the surrounding city.",
+      "Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.",
     rating: 5,
     reviews: [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
@@ -330,7 +330,7 @@ export default [
     ],
     faclitiesShort: ["Bar", "Pool", "Restaurant", "Gym", "Spa"],
     description:
-      "Guests of Loews Hollywood are greeted by a 24-hour reception. For convenience, the hotel offers a 24-hour self-service business centre with computers, copy machines, fax machines and 24-hour concierge services. A fitness centre and yoga room are featured on the fifth floor and offer views of the surrounding city.",
+      "Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.",
     rating: 9,
     reviews: [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
@@ -422,7 +422,7 @@ export default [
       "Spa",
     ],
     description:
-      "Guests of Loews Hollywood are greeted by a 24-hour reception. For convenience, the hotel offers a 24-hour self-service business centre with computers, copy machines, fax machines and 24-hour concierge services. A fitness centre and yoga room are featured on the fifth floor and offer views of the surrounding city.",
+      "Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.Guests of Grand Hotel are greeted by a 24-hour reception. The hotel offers a  fitness centre on the first floor and yoga room is located on the third floor. In our luxurios spa facilities we offer a wide variety of treatments for both your body and soul. Breakfast is included in all our rooms and dinner from our Michelini star kitchen can be booked for your stay.",
     rating: 4,
     reviews: [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
