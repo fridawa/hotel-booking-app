@@ -15,6 +15,7 @@ function Hotel() {
   // Matches the id with id from the data to show the right hotel info
   let thisHotel = data.find((prod) => prod.id === hotelIdInt);
 
+  const id1 = thisHotel.id;
   // const for images for clearer syntax inside map function below
   const hotelimages = thisHotel.hotelImg;
   const rooms = thisHotel.rooms;
@@ -127,7 +128,7 @@ function Hotel() {
                         ${room.price}
                       </p>
                       <div className="d-flex justify-content-end ">
-                        <Link to={"/booking/"}>
+                        <Link to={`/booking/`}>
                           <button className="btn-book btn btn-dark ">
                             Book now
                           </button>

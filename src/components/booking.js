@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import data from "./data";
 import Payment from "./payment";
+import { Link } from "react-router-dom";
+import { useParams } from "react-router";
 
 const Booking = () => {
   return (
@@ -64,13 +66,14 @@ const Booking = () => {
           <Col xs={8}>
             <Row className="p-2 border-bottom">
               <p className="h4">Your Information</p>
+              <p className="asterisk">Fields marked with * are required</p>
               <form>
                 <Row>
                   <Col>
-                    <label for="surname">Surname</label>
+                    <label for="surname">Surname *</label>
                   </Col>
                   <Col>
-                    <label for="lastname">Last name</label>
+                    <label for="lastname">Last name *</label>
                   </Col>
                 </Row>
                 <Row>
@@ -83,7 +86,7 @@ const Booking = () => {
                 </Row>
                 <Row>
                   <Col>
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                   </Col>
                 </Row>
                 <Row>
@@ -97,7 +100,7 @@ const Booking = () => {
                 </Row>
                 <Row>
                   <Col>
-                    <label for="phone">Phone number</label>
+                    <label for="phone">Phone number *</label>
                   </Col>
                 </Row>
                 <Row>
@@ -160,7 +163,11 @@ const Booking = () => {
         </Row>
         <Row className="p-2">
           <Col>
-            <button className="btn  my-btn-small">Go back to view hotel</button>
+            <Link to={`/hotel/`}>
+              <button className="btn  my-btn-small">
+                Go back to view hotel
+              </button>
+            </Link>
           </Col>
         </Row>
       </Container>

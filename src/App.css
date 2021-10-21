@@ -284,3 +284,9 @@ Något anpassad till att passa min egen design */
 .form-select {
   border: 0px !important;
 }
+.btn-pay {
+  color: #ffffff !important;
+}
+.asterisk {
+  font-size: 0.8rem;
+}

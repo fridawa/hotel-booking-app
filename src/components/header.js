@@ -11,7 +11,7 @@ const Header = () => {
         <header>
           <nav className="navbar navbar-expand-md ">
             <Link to={"/"}>
-              <a className="navbar-brand text-light ps-4">
+              <a className="navbar-brand text-light ps-1">
                 <Logo />
               </a>
             </Link>

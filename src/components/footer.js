@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Logo from "./logo";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -51,7 +52,9 @@ const Footer = () => {
             </nav>
           </Row>
           <Row>
-            <Logo />
+            <Link to={"/"}>
+              <Logo />
+            </Link>
           </Row>
           <Row className="m-0 pb-4">
             <p className="text-center text-light footer-copy m-0 p-0 font-soft">
