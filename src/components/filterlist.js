@@ -1,9 +1,15 @@
 import React from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
+
 import ReactSlider from "react-slider";
 import { Rating } from "react-simple-star-rating";
+
 import { useState } from "react";
 
+// This component is a filter menu that is displayed on the same view
+// as the search-results (list.js)
+// The functionality doesnt work as of now, but the slider and star-rating are click-able
 const FilterList = () => {
   // useState for star rating
   const [rating, setRating] = useState(4);
@@ -28,6 +34,7 @@ const FilterList = () => {
             Price <span className="review-span">$0 - $500+</span>
           </div>
 
+          {/* Slider component that displays 2 values for the user to set an amount*/}
           <ReactSlider
             className="horizontal-slider"
             thumbClassName="example-thumb"
@@ -105,7 +112,7 @@ const FilterList = () => {
           <div className="h5 pt-3">
             Guest review <span className="review-span">0-10</span>
           </div>
-
+          {/* Slider component that displays 2 values for the user to set an amount*/}
           <ReactSlider
             className="horizontal-slider"
             thumbClassName="example-thumb"

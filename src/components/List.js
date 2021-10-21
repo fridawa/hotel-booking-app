@@ -1,13 +1,14 @@
 import React from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import FilterList from "./filterlist";
 import Search from "./Search";
 
-import { Link } from "react-router-dom";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+// This is the list of search results.
+// It displays ALL the hotels in data.js since the functionality of the serachbar isn't impemented
+// It gets the hotels via props from app.js since i was planning on doing a search function but didnt have time
 const List = ({ hotels }) => {
   return (
     <>

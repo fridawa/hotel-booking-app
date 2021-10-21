@@ -1,10 +1,13 @@
 import React from "react";
+// Bootstrap
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import data from "./data";
 import Payment from "./payment";
-import { Link } from "react-router-dom";
-import { useParams } from "react-router";
 
+// This component displays the booking-view.
+// Mostly hard coded right now since i didnt pass the hotel from hotel.js
 const Booking = () => {
   return (
     <>
@@ -18,6 +21,8 @@ const Booking = () => {
           <Col xs={4} className="border-end">
             <Row className="p-2 ">
               <p className="h4">Room information</p>
+              {/* slice to just show the first array in data. 
+              For further dev i'd like to send the right id with useParams  */}
               {data.slice(0, 1).map((e) => {
                 return (
                   <div className="pt-2 pb-2">

@@ -1,35 +1,21 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form } from "react-bootstrap";
 
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import { addDays } from "date-fns";
-
 import { Link } from "react-router-dom";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Search = () => {
-  //om jag ska göra en riktig sökfunktion
-  const [searchTerm, setSearchTerm] = useState("");
-  // function searchFunction(event) {
-  //   console.log(event.target.value);
-  // }
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
+// This component is the serachbar for the user to search ackomodation
+// Component displayed on home view, list view and hotel view
+const Search = () => {
   //för checkincheckout datepicker
   const [checkInDate, setCheckInDate] = useState(new Date());
-  const [checkOutDate, setCheckOutDate] = useState(addDays(new Date(), 7));
-
-  const [state, setState] = useState([
-    {
-      startDate: new Date(),
-      endDate: null,
-      key: "selection",
-    },
-  ]);
-
-  //för att lyckas toggla daterange
-  const [open, setOpen] = useState(false);
+  const [checkOutDate, setCheckOutDate] = useState(
+    addDays(new Date(checkInDate), 7) // prevents checkoutdate to be sooner than checkin
+  );
 
   return (
     <div>

@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+// Component for quote displayed at the home-view.
+// This is a separate component for easier access to it when wanting to change quote
 const Quote = () => {
   return (
     <>

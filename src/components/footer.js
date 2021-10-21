@@ -1,8 +1,13 @@
 import React from "react";
+
 import { Container, Row, Col } from "react-bootstrap";
-import Logo from "./logo";
 import { Link } from "react-router-dom";
 
+import Logo from "./logo";
+
+// This component is a simple footer that shows on every view.
+// It displays some links (that doesnt link anywhere)
+// and the logo component is imported.
 const Footer = () => {
   return (
     <>

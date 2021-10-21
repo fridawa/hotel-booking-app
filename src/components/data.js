@@ -22,7 +22,7 @@ export default [
         roomType: "Comfort Room",
         spec: ["Queen size bed", "2 adults, 1 child", "25 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 250,
         bedImg:
           "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
       },
@@ -30,7 +30,7 @@ export default [
         roomType: "Deluxe Room",
         spec: ["King size bed", "2 adults, 1 child", "45 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 350,
         bedImg:
           "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
       },
@@ -75,10 +75,14 @@ export default [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
       "Overall a good visit. We stayed in the Deluxe room and had a really good time in the city. Also really nice dinner at the hotel restaurant.  Didn’t have time to check out the gym",
       "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
+      "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
+      "Overall a good visit. We stayed in the Deluxe room and had a really good time in the city. Also really nice dinner at the hotel restaurant.  Didn’t have time to check out the gym",
+      "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
+      "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
+      "Overall a good visit. We stayed in the Deluxe room and had a really good time in the city. Also really nice dinner at the hotel restaurant.  Didn’t have time to check out the gym",
+      "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
     ],
     price: "$ 250",
-    mainImg:
-      "https://cdn.pixabay.com/photo/2019/10/13/12/35/paris-4546007_1280.jpg",
     hotelImg: [
       "https://cdn.pixabay.com/photo/2019/08/19/15/13/eiffel-tower-4416700_1280.jpg",
       "https://cdn.pixabay.com/photo/2018/12/08/07/52/eiffel-tower-3862939_1280.jpg",
@@ -88,9 +92,9 @@ export default [
   },
   {
     id: 2,
-    name: "Grand Hotel",
-    adress: "357 Paris street",
-    location: "Paris",
+    name: "NY Hotel",
+    adress: "357 NY street",
+    location: "New York",
     locationFacts: [
       "2.3 km to the beach",
       "0.2 km to the subway",
@@ -109,7 +113,7 @@ export default [
         roomType: "Comfort Room",
         spec: ["Queen size bed", "2 adults, 1 child", "25 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 250,
         bedImg:
           "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
       },
@@ -117,7 +121,7 @@ export default [
         roomType: "Deluxe Room",
         spec: ["King size bed", "2 adults, 1 child", "45 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 350,
         bedImg:
           "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
       },
@@ -164,8 +168,6 @@ export default [
       "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
     ],
     price: "$ 250",
-    mainImg:
-      "https://cdn.pixabay.com/photo/2019/10/13/12/35/paris-4546007_1280.jpg",
     hotelImg: [
       "https://cdn.pixabay.com/photo/2014/07/01/12/35/taxi-381233_1280.jpg",
       "https://cdn.pixabay.com/photo/2021/07/09/19/12/brooklyn-bridge-6399829_1280.jpg",
@@ -175,9 +177,9 @@ export default [
   },
   {
     id: 3,
-    name: "Grand Hotel",
-    adress: "357 Paris street",
-    location: "Paris",
+    name: "Barca Hotel",
+    adress: "357 Barcelona street",
+    location: "Barcelona",
     locationFacts: [
       "2.3 km to the beach",
       "0.2 km to the subway",
@@ -196,7 +198,7 @@ export default [
         roomType: "Comfort Room",
         spec: ["Queen size bed", "2 adults, 1 child", "25 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 250,
         bedImg:
           "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
       },
@@ -204,7 +206,7 @@ export default [
         roomType: "Deluxe Room",
         spec: ["King size bed", "2 adults, 1 child", "45 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 350,
         bedImg:
           "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
       },
@@ -238,7 +240,7 @@ export default [
         ],
       },
     ],
-    faclitiesShort: ["Bar", "Pool", "Restaurant", "Gym", "Spa"],
+    faclitiesShort: ["Bar", "Pool", "Restaurant", "Ocean view"],
     description:
       "Guests of Loews Hollywood are greeted by a 24-hour reception. For convenience, the hotel offers a 24-hour self-service business centre with computers, copy machines, fax machines and 24-hour concierge services. A fitness centre and yoga room are featured on the fifth floor and offer views of the surrounding city.",
     rating: 5,
@@ -249,10 +251,11 @@ export default [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
       "Overall a good visit. We stayed in the Deluxe room and had a really good time in the city. Also really nice dinner at the hotel restaurant.  Didn’t have time to check out the gym",
       "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
+      "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
+      "Overall a good visit. We stayed in the Deluxe room and had a really good time in the city. Also really nice dinner at the hotel restaurant.  Didn’t have time to check out the gym",
+      "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
     ],
     price: "$ 250",
-    mainImg:
-      "https://cdn.pixabay.com/photo/2019/10/13/12/35/paris-4546007_1280.jpg",
     hotelImg: [
       "https://cdn.pixabay.com/photo/2018/12/29/14/11/barcelona-3901449_1280.jpg",
       "https://cdn.pixabay.com/photo/2016/03/24/07/31/spain-1276209_1280.jpg",
@@ -262,9 +265,9 @@ export default [
   },
   {
     id: 4,
-    name: "Grand Hotel",
-    adress: "357 Paris street",
-    location: "Paris",
+    name: "Moscow Hotel",
+    adress: "357 Moscow street",
+    location: "Moscow",
     locationFacts: [
       "2.3 km to the beach",
       "0.2 km to the subway",
@@ -283,7 +286,7 @@ export default [
         roomType: "Comfort Room",
         spec: ["Queen size bed", "2 adults, 1 child", "25 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 250,
         bedImg:
           "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
       },
@@ -291,7 +294,7 @@ export default [
         roomType: "Deluxe Room",
         spec: ["King size bed", "2 adults, 1 child", "45 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 350,
         bedImg:
           "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
       },
@@ -338,20 +341,18 @@ export default [
       "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
     ],
     price: "$ 250",
-    mainImg:
-      "https://cdn.pixabay.com/photo/2019/10/13/12/35/paris-4546007_1280.jpg",
     hotelImg: [
-      "https://cdn.pixabay.com/photo/2019/08/19/15/13/eiffel-tower-4416700_1280.jpg",
-      "https://cdn.pixabay.com/photo/2018/12/08/07/52/eiffel-tower-3862939_1280.jpg",
-      "https://cdn.pixabay.com/photo/2014/07/10/17/17/hotel-389256_1280.jpg",
-      "https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/07/30/08/13/moscow-1556561_1280.jpg",
+      "https://cdn.pixabay.com/photo/2019/11/16/18/43/street-4630827_1280.jpg",
+      "https://cdn.pixabay.com/photo/2016/12/23/00/37/moscow-1926621_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/11/16/18/56/building-1046188_1280.jpg",
     ],
   },
   {
     id: 5,
-    name: "Grand Hotel",
-    adress: "357 Paris street",
-    location: "Paris",
+    name: "Bora Bora Hotel",
+    adress: "357 Bora street",
+    location: "Bora Bora",
     locationFacts: [
       "2.3 km to the beach",
       "0.2 km to the subway",
@@ -370,7 +371,7 @@ export default [
         roomType: "Comfort Room",
         spec: ["Queen size bed", "2 adults, 1 child", "25 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 250,
         bedImg:
           "https://cdn.pixabay.com/photo/2016/10/18/09/02/hotel-1749602_1280.jpg",
       },
@@ -378,7 +379,7 @@ export default [
         roomType: "Deluxe Room",
         spec: ["King size bed", "2 adults, 1 child", "45 m²", "Free wifi"],
         accessibility: ["Wheelchair friendly", "Room at ground level"],
-        price: 150,
+        price: 350,
         bedImg:
           "https://cdn.pixabay.com/photo/2014/08/11/21/40/bedroom-416062_1280.jpg",
       },
@@ -412,7 +413,14 @@ export default [
         ],
       },
     ],
-    faclitiesShort: ["Bar", "Pool", "Restaurant", "Gym", "Spa"],
+    faclitiesShort: [
+      "Bar",
+      "Ocean room",
+      "Bungalow",
+      "Restaurant",
+      "Gym",
+      "Spa",
+    ],
     description:
       "Guests of Loews Hollywood are greeted by a 24-hour reception. For convenience, the hotel offers a 24-hour self-service business centre with computers, copy machines, fax machines and 24-hour concierge services. A fitness centre and yoga room are featured on the fifth floor and offer views of the surrounding city.",
     rating: 4,
@@ -423,15 +431,16 @@ export default [
       "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
       "Overall a good visit. We stayed in the Deluxe room and had a really good time in the city. Also really nice dinner at the hotel restaurant.  Didn’t have time to check out the gym",
       "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
+      "I loved this hotel. Helpful staff. Great food, really good that all was included. The hotel was also located in the middle of the city which was good for me and my family since we wanted to do a lot of city-activities. Would definitely recommend and visit again sometime.",
+      "Overall a good visit. We stayed in the Deluxe room and had a really good time in the city. Also really nice dinner at the hotel restaurant.  Didn’t have time to check out the gym",
+      "Got this trip as a gift from my family and this hotel really made the whole trip so much more enjoyable. Good and big breakfast. Really helpful staff that showed us some of the citys hidden gems. Would love to stay here again sometime.",
     ],
     price: "$ 250",
-    mainImg:
-      "https://cdn.pixabay.com/photo/2019/10/13/12/35/paris-4546007_1280.jpg",
     hotelImg: [
-      "https://cdn.pixabay.com/photo/2019/08/19/15/13/eiffel-tower-4416700_1280.jpg",
-      "https://cdn.pixabay.com/photo/2018/12/08/07/52/eiffel-tower-3862939_1280.jpg",
-      "https://cdn.pixabay.com/photo/2014/07/10/17/17/hotel-389256_1280.jpg",
-      "https://cdn.pixabay.com/photo/2016/04/15/11/48/hotel-1330850_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/12/16/22/22/bora-bora-3023437_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/03/18/21/17/bora-bora-680010_1280.jpg",
+      "https://cdn.pixabay.com/photo/2020/11/28/02/17/island-5783440_1280.jpg",
+      "https://cdn.pixabay.com/photo/2015/11/02/13/39/bora-bora-1018423_1280.jpg",
     ],
   },
 ];

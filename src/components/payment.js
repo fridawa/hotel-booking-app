@@ -1,8 +1,12 @@
 import React from "react";
+
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+// This function is a toggle function for the payment alternatives.
+// If the user selects "pay now" a drop down i toggled with card input details
 function Payment() {
+  // simple boolean useState for toggling the two divs and styling
   const [selected, setSelected] = useState(1);
 
   return (
@@ -13,7 +17,7 @@ function Payment() {
           style={
             ({ fontWeight: selected === 0 ? 600 : 400 },
             { backgroundColor: selected === 0 ? "#3b4045" : "#6c757d" })
-          } // conditional styling.
+          } // conditional styling
           className="btn p-2 mt-2 ms-2 me-2 btn-pay"
         >
           Pay now with credit card{" "}
@@ -23,7 +27,7 @@ function Payment() {
           style={
             ({ fontWeight: selected === 1 ? 600 : 400 },
             { backgroundColor: selected === 1 ? "#3b4045" : "#6c757d" })
-          } // conditional styling.
+          } // conditional styling
           className="btn p-2 mt-2 ms-2 me-2 btn-pay"
         >
           Pay when you arrive at the hotel
@@ -45,7 +49,11 @@ function Payment() {
               </Row>
               <Row>
                 <Col xs={12}>
-                  <input type="text" id="cardno"></input>
+                  <input
+                    type="text"
+                    id="cardno"
+                    placeholder="···· ···· ···· ····"
+                  ></input>
                 </Col>
               </Row>
               <Row>
@@ -58,10 +66,10 @@ function Payment() {
               </Row>
               <Row>
                 <Col>
-                  <input type="text" id="date"></input>
+                  <input type="text" id="date" placeholder="MM/YY"></input>
                 </Col>
                 <Col>
-                  <input type="text" id="cvc"></input>
+                  <input type="text" id="cvc" placeholder="···"></input>
                 </Col>
               </Row>
               <Row>

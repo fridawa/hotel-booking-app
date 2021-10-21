@@ -1,25 +1,22 @@
 import React from "react";
+
 import { useParams } from "react-router";
 import { Container, Row, Col } from "react-bootstrap";
-import data from "./data";
 import { Link } from "react-router-dom";
+
+import data from "./data";
 import Search from "./Search";
 
+// This component shows all the data for hotel-details.
+// It uses useOarams to get the id from list.js and is therefore able
+// to display the correct corresponding data
 function Hotel() {
   // Fetches the id sent in url from link.js
   const { id } = useParams();
-
-  // Converts the id from string to integer
+  // Converts the id from string to integer (comparision didnt work with a string)
   var hotelIdInt = parseInt(id, 10);
-
   // Matches the id with id from the data to show the right hotel info
   let thisHotel = data.find((prod) => prod.id === hotelIdInt);
-
-  const id1 = thisHotel.id;
-  // const for images for clearer syntax inside map function below
-  const hotelimages = thisHotel.hotelImg;
-  const rooms = thisHotel.rooms;
-  const facilities = thisHotel.facilites;
 
   // Displays the hotel with the matching id from data.js
   return (
@@ -48,7 +45,7 @@ function Hotel() {
         <Row>
           <Col xs={6}>
             <div className="d-flex flex-wrap justify-content-start ">
-              {hotelimages.map((img) => {
+              {thisHotel.hotelImg.map((img) => {
                 return (
                   <>
                     <Col xs={6}>
@@ -69,6 +66,7 @@ function Hotel() {
               </span>
             </div>
             {thisHotel.reviews.slice(0, 3).map((review) => {
+              //displays only first 3 reviews
               return (
                 <>
                   <p className="pt-2">{review}</p>
@@ -93,7 +91,7 @@ function Hotel() {
               Room types
             </p>
 
-            {rooms.map((room) => {
+            {thisHotel.rooms.map((room) => {
               return (
                 <>
                   <Row className="pt-2 pb-4">
@@ -145,7 +143,7 @@ function Hotel() {
         <div className="pt-4">
           <p className="hotel-bold hotel-heading mb-0 pt-3">Facilities</p>
 
-          {facilities.map((facility) => {
+          {thisHotel.facilites.map((facility) => {
             return (
               <>
                 <Row>

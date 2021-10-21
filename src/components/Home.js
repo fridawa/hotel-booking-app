@@ -5,6 +5,7 @@ import { Col } from "react-bootstrap";
 import Search from "./Search";
 import Quote from "./quote";
 
+// This components dispalys two other components which together make up the home-view
 const Home = () => {
   return (
     <>

@@ -1,9 +1,14 @@
 import React from "react";
+
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Logo from "./logo";
 
+// This is the header with a standard navbar pretty much taken from bootstraps example.
+// Added routing links on logo and home-button
+// Also added the FA bars for the hamburger menu (even though the app isnt supposed to be viewed in smaller formats)
 const Header = () => {
   return (
     <>

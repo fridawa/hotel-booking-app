@@ -15,7 +15,6 @@ import Footer from "./components/footer";
 import Hotel from "./components/hotel";
 import Home from "./components/Home";
 import Booking from "./components/booking";
-
 import ScrollToTop from "./components/ScrollToTop";
 
 // Routing
@@ -24,26 +23,17 @@ import { Switch, Route } from "react-router-dom";
 // FontAwesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-  faStar,
-  faStarHalfAlt,
   faMapMarkerAlt,
   faCalendar,
   faUserFriends,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
-library.add(
-  faStar,
-  faStarHalfAlt,
-  faMapMarkerAlt,
-  faCalendar,
-  faUserFriends,
-  faBars
-);
+library.add(faMapMarkerAlt, faCalendar, faUserFriends, faBars);
 
+// Component that gathers all the other components and handles routing
 function App() {
-  //importerar datan från data
-  const [hotels, setHotels] = useState(data);
-
+  // const [hotels, setHotels] = useState(data);
+  const hotels = data;
   return (
     <main>
       <div className="everything-but-footer">

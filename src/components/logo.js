@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 
+// This is a simple component for the logo so it can placed anywhere
 const Logo = () => {
   return (
     <>
